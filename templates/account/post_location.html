@@ -1,0 +1,75 @@
+{% extends "main.html" %}
+
+{% block title %}Post a new location {% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <h2>Post a new location</h2>
+        </div>
+
+    <div class="row">
+        <form class="form-horizontal" method="post" enctype="multipart/form-data" >
+
+            <div class="form-group">
+
+                    <label for="title" class="col-lg-2 control-label">
+                        Title
+                    </label>
+                    <div class="col-lg-6">
+                        <input type="text" class="form-control" name="title" id="title" placeholder="title">
+                    </div>
+            </div>
+
+             <div class="form-group">
+                    <label for="image" class="col-lg-2 control-label">
+                        Image Photo
+                    </label>
+                    <div class="col-lg-6">
+                        <input type="file" class="form-control" name="image" id="image">
+                    </div>
+             </div>
+
+
+                <div class="form-group">
+                    <label for="password" class="col-lg-2 control-label">
+                        Description
+                    </label>
+                    <div class="col-lg-6">
+                        <textarea type="text" class="form-control" id="description" name="description" placeholder="description"></textarea>
+                    </div>
+                </div>
+
+             <div class="form-group">
+                    <label for="price" class="col-lg-2 control-label">
+                        Price
+                    </label>
+                    <div class="col-lg-6">
+                        <input type="text" class="form-control" name="price" id="price" placeholder="price">
+                    </div>
+                </div>
+
+
+            <div class="form-group">
+                    <label for="date" class="col-lg-2 control-label">
+                        Date
+                    </label>
+
+                    <div class="col-lg-6">
+                        <input type="text" class="form-control" name="date" id="date" placeholder="date">
+                    </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-lg-offset-2 col-lg-10">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+    </div>
+
+
+
+{% endblock %}

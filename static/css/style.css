@@ -1,0 +1,197 @@
+body {
+    background-color: #ffffff;
+    padding-top: 70px;
+    height: 100%;
+
+}
+.snpt {
+    height: 375px;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.snpt:hover {
+    -webkit-box-shadow: 0 1px 1px 2px #e5e5e5;
+    -moz-box-shadow: 0 1px 1px 2px #e5e5e5;
+    box-shadow: 0 1px 1px 2px #e5e5e5;
+}
+.snpt > .snpt-img {
+    width: 100%;
+    height: 200px;
+}
+.snpt > .snpt-title > h2 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #e3e3e3;
+    height: 45px;
+}
+    .snpt > .snpt-title > h2 a {
+    color: #e3e3e3;
+    }
+        .snpt > .snpt-title > h2 a:hover {
+            text-decoration: underline;
+        }
+.snpt > .snpt-ingredients {
+    font-size: 13px;
+}
+    .snpt > .snpt-ingredients a {
+        color: #737373;
+        text-decoration: none;
+    }
+
+ul.square {
+    list-style-type: none;
+}
+    ul.square li:before {
+        color: #999999;
+        font-family: 'FontAwesome';
+        content: '\f0c8';
+        margin-right: 5px;
+        margin-left: -15px;
+        font-size: 9px;
+        vertical-align: middle;
+    }
+    ul.square h4 {
+        display: inline;
+    }
+.new-recipe {
+    display: 300px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.post-new-recipe {
+    position: relative;
+    top: 25%;
+}
+.img-container {
+    width: 100%;
+    height: 220px;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.account-snippet {
+    height: 80px;
+    color: #222;
+    padding: 10px;
+    font-size: 18px;
+}
+.main-header {
+    text-align: center;
+    background: url("") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 300px;
+}
+.home-h1 {
+    color: #1b96b0;
+    font-size: 72px;
+    text-shadow: 0 0 5px #222;
+}
+.panel-default {
+opacity: 0.9;
+margin-top:30px;
+}
+.form-group.last { margin-bottom:0px; }
+.thumbnail img {
+    width: 100%;
+}
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #d17581;
+}
+
+.thumbnail {
+    padding: 5px;
+}
+
+.thumbnail .caption-full {
+    padding: 2px;
+    color: #333;
+}
+
+footer {
+    margin: 50px 0;
+}
+/* You can change the height of the carousel by changing the height in the class below. It is set to 50% by default, but can be any height! */
+
+.carousel {
+    height: 50%;
+}
+
+.item,
+.active,
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+/* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+

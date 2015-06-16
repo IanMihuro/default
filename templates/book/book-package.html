@@ -1,0 +1,66 @@
+{% extends "main.html" %}
+
+{% block title %} Confirmation {% endblock %}
+{% block content %}
+     <br/>
+     <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-offset-2">
+                    <div class="thumbnail">
+                        <img src="{{ package.image_url }}" style="width: auto; height: auto;" class="img-responsive">
+
+                        <div class="caption-full">
+                        <h4> <strong>Where:</strong> {{ package.title }}</h4>
+                        <p> <strong>When:</strong>   {{ package.date }}</p>
+                        <p> <strong>Description:</strong> {{ package.description }}</p>
+
+                        <br/>
+
+                        <form class="form-inline" action="/book/{{ location_id }}" method="post">
+                            <div class="form-group" id="bookForm">
+                                <label for="numbers" class="control-label">
+                                    Numbers
+                                </label>
+                                 <input type="text" class="form-control" onChange="calc()" name="numbers" id="numbers" placeholder="number of visitors" value="1">
+                            </div>
+                            &nbsp;
+                            &nbsp;
+                             <div class="form-group">
+                                <label for="price" class="control-label">
+                                    Total
+                                    {{ e }}
+                                </label>
+                                <input type="text" class="form-control" name="price" id="price" placeholder="price" value="{{ package.price }}"  readonly>
+                                </div>
+
+                                 &nbsp;
+                                 &nbsp;
+
+                                <button type="submit" class="btn btn-primary">Confirm</button>
+
+
+                        </form>
+
+                    </div>
+
+
+                     </div>
+            </div>
+
+        </div>
+      </div>
+ </div>
+
+
+    <script>
+           function calc(){
+                var price = document.getElementById('price').value;
+                var num = document.getElementById('numbers').value;
+                var sum = price * num;
+                document.getElementById('price').value=sum;
+                return false
+
+            }
+    </script>
+
+{% endblock %}
